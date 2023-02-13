@@ -5,17 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def title():
-    return '''<!doctype html>
-                <html lang="en">
-                  <head>
-                    <title>Миссия Колонизация Марса</title>
-                  </head>
-                </html>'''
+    return '''Миссия Колонизация Марса'''
 
 
 @app.route('/index')
 def index():
-    return "И на Марсе будут яблони цвести!"
+    return '''И на Марсе будут яблони цвести!'''
 
 
 if __name__ == '__main__':
